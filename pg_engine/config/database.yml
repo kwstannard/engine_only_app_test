@@ -1,8 +1,10 @@
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
   pool: 5
+  username: root
   timeout: 5000
 
 development:
   <<: *default
-  database: db/pg_enginedevelopment.sqlite3
+  database: pg_engine_development

@@ -1,16 +1,14 @@
 desc "migrate engine"
 namespace :foo_engine do
-  def establish_foo_db_connection
+  task :establish_db_connection do
     ActiveRecord::Base.establish_connection FooEngine::Engine.db_conf
   end
 
-  task :migrate do
-    establish_foo_db_connection
+  task migrate: [:establish_db_connection] do
     ActiveRecord::Migrator.migrate(FooEngine::Engine.root.join "db/migrate/")
   end
 
-  task :rollback do
-    establish_foo_db_connection
+  task rollback: [:establish_db_connection] do
     ActiveRecord::Migrator.rollback(FooEngine::Engine.root.join "db/migrate/")
   end
 end

@@ -10,6 +10,12 @@ PATH
     foo_engine (0.0.1)
       rails (~> 4.2.4)
 
+PATH
+  remote: /Users/stannard/personal_projects/engine_only_app_test/pg_engine
+  specs:
+    pg_engine (0.0.1)
+      rails (~> 4.2.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -164,6 +170,7 @@ DEPENDENCIES
   foo_engine!
   jbuilder (~> 2.0)
   jquery-rails
+  pg_engine!
   pry
   rails (= 4.2.4)
   sass-rails (~> 5.0)
