@@ -1,16 +1,14 @@
 desc "migrate engine"
 namespace :bar_engine do
-  def establish_bar_db_connection
+  task :establish_bar_db_connection do
     ActiveRecord::Base.establish_connection BarEngine::Engine.db_conf
   end
 
-  task :migrate do
-    establish_bar_db_connection
+  task migrate: [:establish_bar_db_connection] do
     ActiveRecord::Migrator.migrate(BarEngine::Engine.root.join "db/migrate/")
   end
 
-  task :rollback do
-    establish_bar_db_connection
+  task rollback: [:establish_bar_db_connection] do
     ActiveRecord::Migrator.rollback(BarEngine::Engine.root.join "db/migrate/")
   end
 end

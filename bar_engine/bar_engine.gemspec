@@ -1,12 +1,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "bar_engine/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "bar_engine"
-  s.version     = BarEngine::VERSION
+  s.version     = '0.0.1'
   s.authors     = ["Kelly Stannard"]
   s.email       = ["kelly.stannard@caspersleep.com"]
   s.summary     = "HI"
