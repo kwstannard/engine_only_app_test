@@ -1,4 +1,4 @@
-module BarEngine
+module PgEngine
   module ApplicationHelper
   end
 end

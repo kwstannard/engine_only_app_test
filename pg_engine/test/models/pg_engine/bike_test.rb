@@ -1,7 +1,7 @@
 require 'test_helper'
 
-module BarEngine
-  class TruckTest < ActiveSupport::TestCase
+module PgEngine
+  class BikeTest < ActiveSupport::TestCase
     # test "the truth" do
     #   assert true
     # end

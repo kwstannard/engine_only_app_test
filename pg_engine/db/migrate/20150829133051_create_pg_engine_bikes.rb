@@ -1,6 +1,6 @@
-class CreateBarEngineTrucks < ActiveRecord::Migration
+class CreatePgEngineBikes < ActiveRecord::Migration
   def change
-    create_table :bar_engine_trucks do |t|
+    create_table :pg_engine_bikes do |t|
       t.string :make
       t.string :model
 

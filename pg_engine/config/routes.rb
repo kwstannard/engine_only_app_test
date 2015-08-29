@@ -1,2 +1,2 @@
-BarEngine::Engine.routes.draw do
+PgEngine::Engine.routes.draw do
 end

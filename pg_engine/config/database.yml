@@ -5,4 +5,4 @@ default: &default
 
 development:
   <<: *default
-  database: db/bar_enginedevelopment.sqlite3
+  database: db/pg_enginedevelopment.sqlite3

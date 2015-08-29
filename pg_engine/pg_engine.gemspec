@@ -4,7 +4,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "bar_engine"
+  s.name        = "pg_engine"
   s.version     = '0.0.1'
   s.authors     = ["Kelly Stannard"]
   s.email       = ["kelly.stannard@caspersleep.com"]
