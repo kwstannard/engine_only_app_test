@@ -5,5 +5,6 @@ module FooEngine
     def db_conf
       YAML::load(root.join('config/database.yml').read)[Rails.env]
     end
+    debugger
   end
 end
