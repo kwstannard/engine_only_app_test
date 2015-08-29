@@ -1,5 +1,5 @@
 module FooEngine
-  class Truck < ActiveRecord::Base
+  class Car < ActiveRecord::Base
     establish_connection Engine.db_conf
   end
 end

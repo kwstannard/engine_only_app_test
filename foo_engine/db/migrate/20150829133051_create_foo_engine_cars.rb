@@ -1,6 +1,6 @@
-class CreateFooEngineTrucks < ActiveRecord::Migration
+class CreateFooEngineCars < ActiveRecord::Migration
   def change
-    create_table :foo_engine_trucks do |t|
+    create_table :foo_engine_cars do |t|
       t.string :make
       t.string :model
 
