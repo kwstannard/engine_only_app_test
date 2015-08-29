@@ -6,7 +6,7 @@ require "foo_engine/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "foo_engine"
-  s.version     = BarEngine::VERSION
+  s.version     = FooEngine::VERSION
   s.authors     = ["Kelly Stannard"]
   s.email       = ["kelly.stannard@caspersleep.com"]
   s.summary     = "HI"

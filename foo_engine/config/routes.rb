@@ -1,2 +1,2 @@
-BarEngine::Engine.routes.draw do
+FooEngine::Engine.routes.draw do
 end

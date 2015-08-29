@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class BarEngineTest < ActiveSupport::TestCase
+class FooEngineTest < ActiveSupport::TestCase
   test "truth" do
-    assert_kind_of Module, BarEngine
+    assert_kind_of Module, FooEngine
   end
 end

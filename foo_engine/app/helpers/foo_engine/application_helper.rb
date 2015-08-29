@@ -1,4 +1,4 @@
-module BarEngine
+module FooEngine
   module ApplicationHelper
   end
 end

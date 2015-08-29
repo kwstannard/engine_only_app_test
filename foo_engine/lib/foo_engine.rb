@@ -1,4 +1,4 @@
 require "foo_engine/engine"
 
-module BarEngine
+module FooEngine
 end

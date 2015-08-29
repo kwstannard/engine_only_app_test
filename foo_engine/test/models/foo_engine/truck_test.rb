@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module BarEngine
+module FooEngine
   class TruckTest < ActiveSupport::TestCase
     # test "the truth" do
     #   assert true

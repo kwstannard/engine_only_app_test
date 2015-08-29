@@ -1,4 +1,4 @@
-class CreateBarEngineTrucks < ActiveRecord::Migration
+class CreateFooEngineTrucks < ActiveRecord::Migration
   def change
     create_table :foo_engine_trucks do |t|
       t.string :make
