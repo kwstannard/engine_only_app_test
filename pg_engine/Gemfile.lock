@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bar_engine (0.0.1)
+    pg_engine (0.0.1)
       rails (~> 4.2.4)
 
 GEM
@@ -102,7 +102,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bar_engine!
+  pg_engine!
   sqlite3
 
 BUNDLED WITH
