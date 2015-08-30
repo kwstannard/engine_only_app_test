@@ -1,5 +1,5 @@
 class TrucksController < ApplicationController
   def index
-    @bikes = Truck.all
+    @trucks = Truck.all
   end
 end
