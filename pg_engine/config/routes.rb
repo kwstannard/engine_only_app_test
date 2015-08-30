@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :bikes, only: [:index]
+  namespace :pg_engine do
+    resources :bikes, only: [:index]
+  end
 end
