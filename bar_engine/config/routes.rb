@@ -1,2 +1,3 @@
-BarEngine::Engine.routes.draw do
+Rails.application.routes.draw do
+  resources :trucks, only: [:index]
 end
