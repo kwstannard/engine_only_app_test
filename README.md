@@ -5,6 +5,7 @@ I have a theory that it is possible and beneficial for large teams to have a sin
 ## Setup
 One of the engines uses postgresql, so install that first.
 ```
+cd base_app
 bundle install
 rake engines:db:create
 rake engines:db:migrate
