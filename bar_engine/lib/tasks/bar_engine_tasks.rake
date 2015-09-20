@@ -4,6 +4,7 @@ namespace :bar_engine do
       ActiveRecord::Base.establish_connection BarEngine::Engine.db_conf
     end
 
+    desc "migrates bar db"
     task migrate: [:establish_db_connection] do
       ActiveRecord::Migrator.migrate(BarEngine::Engine.root.join "db/migrate/")
     end

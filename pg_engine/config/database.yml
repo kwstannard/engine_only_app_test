@@ -7,3 +7,7 @@ default: &default
 development:
   <<: *default
   database: pg_engine_development
+
+test:
+  <<: *default
+  database: pg_engine_test
