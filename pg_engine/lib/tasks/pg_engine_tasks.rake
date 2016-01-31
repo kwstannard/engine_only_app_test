@@ -8,7 +8,7 @@ namespace :pg_engine do
     desc "prepare app to use engine db"
     task config_prepare: ['config/pg_database.yml']
 
-    file 'config/database.yml' => P do
+    file 'config/database.yml' do
       Rails.root.join('config/database.yml').open("a+") do |f|
         f.write e_root.join('config/database.yml').read
       end
