@@ -47,5 +47,3 @@ group :development do
 end
 
 gem 'foo_engine', path: Pathname(Dir.home).join("personal_projects/engine_only_app_test/foo_engine")
-gem 'bar_engine', path: Pathname(Dir.home).join("personal_projects/engine_only_app_test/bar_engine")
-gem 'pg_engine', path: Pathname(Dir.home).join("personal_projects/engine_only_app_test/pg_engine")
