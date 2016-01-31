@@ -1,4 +1,13 @@
-<%= @cars.each do |car| %>
+<% @cars.each do |car| %>
   Make: <%= car.make %>
   Model: <%= car.model %>
+  </br>
+<% end %>
+</br>
+<%= form_tag "/foo_engine/cars" do %>
+  <%= label_tag :make, "Make" %>
+  <%= text_field_tag :make %>
+  <%= label_tag :model, "Model" %>
+  <%= text_field_tag :model %>
+  <%= submit_tag "Create" %>
 <% end %>
