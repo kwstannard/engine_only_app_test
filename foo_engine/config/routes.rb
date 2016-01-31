@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :cars, only: [:index]
+  namespace :foo_engine do
+    resources :cars, only: [:index, :create]
+  end
 end
