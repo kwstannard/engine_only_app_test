@@ -3,7 +3,5 @@ Rails.application.routes.draw do
 end
 
 BarEngine::Engine.routes.draw do
-  namespace :bar_engine do
-    resources :trucks, only: [:index]
-  end
+  resources :trucks, only: [:index]
 end

@@ -3,7 +3,5 @@ Rails.application.routes.draw do
 end
 
 PgEngine::Engine.routes.draw do
-  namespace :pg_engine do
-    resources :bikes, only: [:index]
-  end
+  resources :bikes, only: [:index]
 end

@@ -46,6 +46,11 @@ group :development do
   gem 'spring'
 end
 
-gem 'foo_engine', path: Pathname(Dir.home).join("personal_projects/engine_only_app_test/foo_engine")
-gem 'bar_engine', path: Pathname(Dir.home).join("personal_projects/engine_only_app_test/bar_engine")
-gem 'pg_engine', path: Pathname(Dir.home).join("personal_projects/engine_only_app_test/pg_engine")
+root = Pathname.pwd.join("..")
+gem 'foo_engine', path: root.join("foo_engine")
+gem 'bar_engine', path: root.join("bar_engine")
+gem 'pg_engine', path: root.join("pg_engine")
+gem 'authentication', path: root.join("authentication")
+
+# needed until engine only helpers is on rubygems
+gem 'engine_only_helpers', path: root.join("engine_only_helpers")
