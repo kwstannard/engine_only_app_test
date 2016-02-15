@@ -24,16 +24,16 @@ EngineOnlyHelpers.engine_namespaces.each do |engine_namespace|
 
       desc "drops #{name}'s database"
       task :drop do
-        ActiveRecord::Base.establish_connection PgEngine::Engine.base_db_conf
-        conf = PgEngine::Engine.db_conf
+        ActiveRecord::Base.establish_connection engine.base_db_conf
+        conf = engine.db_conf
         ActiveRecord::Base.connection.select_all "select pg_terminate_backend(pg_stat_activity.pid) from pg_stat_activity where datname='#{conf["database"]}' AND state='idle';"
         ActiveRecord::Base.connection.drop_database(conf["database"])
       end
 
       desc "creates #{name}'s database"
       task :create do
-        ActiveRecord::Base.establish_connection PgEngine::Engine.base_db_conf
-        conf = PgEngine::Engine.db_conf
+        ActiveRecord::Base.establish_connection engine.base_db_conf
+        conf = engine.db_conf
         ActiveRecord::Base.connection.create_database(conf["database"], conf)
       end
 

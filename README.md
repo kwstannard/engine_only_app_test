@@ -15,3 +15,8 @@ You will see 3 migrations, but each migration is actually going to a different d
 ## Interesting tests
 - You can migrate and rollback individual engine databases.
 - You can drop and create the pg_engine database (sqlite doesn't drop dbs)
+
+## TODO
+- better base app dump solution. Schemas shouldn't change when running migrations in base app. Maybe delete dump from the base app migrations?
+- get authentication working
+- do some cross gem functionality
