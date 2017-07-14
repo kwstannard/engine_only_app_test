@@ -2,6 +2,8 @@
 
 I have a theory that it is possible and beneficial for large teams to have a single app for ease of development while at the same time maintaining separation of responsibilities by placing all code into gems and engines.
 
+An alternate setup is to go the monorepo route and have all your apps in a single repo and then you don't need to worry about versioning your engines.
+
 ## Setup
 One of the engines uses postgresql, so install that first.
 ```
